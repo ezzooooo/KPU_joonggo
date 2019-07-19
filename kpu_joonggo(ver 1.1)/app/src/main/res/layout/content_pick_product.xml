@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="Joonggo.Activity.PickProductActivity"
+    android:background="@drawable/background_product"
+    tools:showIn="@layout/activity_pick_product">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kinds"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_margin="16dp"
+                android:padding="3dp"
+                android:text="종류"
+                android:background="@drawable/rounded_register"/>
+
+            <TextView
+                android:id="@+id/kinds_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="전공도서" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_margin="16dp"
+                android:text="가격"
+                android:padding="3dp"
+                android:background="@drawable/rounded_register"/>
+
+            <TextView
+                android:id="@+id/price_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="30000원" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/text_margin"
+                android:text="상태"
+                android:padding="3dp"
+                android:background="@drawable/rounded_register"/>
+
+            <TextView
+                android:id="@+id/state_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="매우 좋음" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/infomation"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/text_margin"
+                android:text="정보"
+                android:padding="3dp"
+                android:background="@drawable/rounded_register"/>
+
+            <TextView
+                android:id="@+id/info_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="3학년 1학기 전공도서 뭐 정의훈 교수님 네트워크 프로그래밍 책이며 필기도 다 되어있습니다." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/uniqueness"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/text_margin"
+                android:textAlignment="center"
+                android:text="등록자"
+                android:padding="3dp"
+                android:background="@drawable/rounded_register"/>
+
+            <TextView
+                android:id="@+id/uniq_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="가격 흥정 가능하고 연락주세용~" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/love_button"
+                android:text="상품찜하기"
+                android:layout_gravity="left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textColor="#0b253d "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_favorite_border_black"
+                android:background="@drawable/rounded_buttonwhite"/>
+
+            <Button
+                android:id="@+id/message_button"
+                android:text="메세지보내기"
+                android:layout_height="wrap_content"
+                android:textColor="#0b253d "
+                android:layout_width="250dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/product_edit_button"
+                android:text="상품수정"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0b253d "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/product_finish_button"
+                android:text="판매완료"
+                android:textColor="#0b253d "
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

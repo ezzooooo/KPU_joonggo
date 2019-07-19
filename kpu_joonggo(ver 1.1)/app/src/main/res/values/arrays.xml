@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>교재</item>
+        <item>일반도서</item>
+        <item>전자제품</item>
+        <item>의류</item>
+        <item>자취방</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="major">
+        <item>기계공학과</item>
+        <item>기계설계공학과</item>
+        <item>메카트로닉스공학과</item>
+        <item>전자공학부</item>
+        <item>컴퓨터공학부</item>
+        <item>게임공학부</item>
+        <item>신소재공학과</item>
+        <item>생명화학공학과</item>
+        <item>디자인학부</item>
+        <item>경영학부</item>
+        <item>나노광공학과</item>
+        <item>에너지전기공학과</item>
+        <item>지식융합학부</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>직접입력</item>
+        <item>"naver.com"</item>
+        <item>"hanmail.net"</item>
+        <item>"kpu.ac.kr"</item>
+        <item>"nate.com"</item>
+        <item>"yahoo.co.kr"</item>
+        <item>"gmail.com"</item>
+        <item>"korea.com"</item>
+        <item>"hotmail.com"</item>
+
+    </string-array>
+
+</resources>

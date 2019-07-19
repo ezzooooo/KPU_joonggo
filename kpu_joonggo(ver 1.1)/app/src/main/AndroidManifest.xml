@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kpu.computer.joonggo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo2"
+        android:label="KPU 산기장터"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductaddActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="KPU.Joonggo"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".IDSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RepasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".InformationActivity"
+            android:label="KPU 산기장터"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".UserinfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NicknameEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EmailEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MajorEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PickProductActivity"
+            android:label="@string/title_activity_pick_product"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SearchProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MessageSendActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MessageConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SearchSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".QuestionActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Joonggo.Activity.EmailEditActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="이메일 변경"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:hint=" 이메일"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#0b253d"
+            android:textColorHint="#63686c"
+            android:id="@+id/emailText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:background="@drawable/rounded_register"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_width="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:text="\@"/>
+
+        <EditText
+            android:hint="직접입력"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#0b253d"
+            android:textColorHint="#63686c"
+            android:id="@+id/emailadressText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_register"/>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="280dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/emailSpinner">
+    </Spinner>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_login"
+        android:textColor="#ffffff"
+        android:id="@+id/email_commitButton"
+        android:text="변경하기"
+        android:textSize="20sp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

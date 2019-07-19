@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Joonggo.Activity.NicknameEditActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="닉네임 변경"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:hint="변경할 닉네임"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#0b253d"
+            android:textColorHint="#63686c"
+            android:id="@+id/edit_nicknameText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:drawableStart="@drawable/ic_face_black_24dp"
+            android:drawableLeft="@drawable/ic_face_black_24dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_register"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_check"
+            android:text="중복 체크"
+            android:layout_gravity="center"
+            android:id="@+id/edit_validateButton1"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_login"
+        android:textColor="#ffffff"
+        android:id="@+id/nickname_commitButton"
+        android:text="변경하기"
+        android:textSize="20sp"
+        android:layout_width="280dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

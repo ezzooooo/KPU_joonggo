@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="Joonggo.Activity.InformationActivity"
+    tools:showIn="@layout/app_bar_information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:text=""
+                android:hint=" 상품을 입력하세요."
+                android:textSize="15sp"
+                android:textColor="#0b253d"
+                android:textColorHint="#63686c"
+                android:id="@+id/search_product"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:singleLine="true"
+                android:lines="1"
+
+                />
+
+            <Button
+                android:text="검색"
+                android:id="@+id/product_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_product"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/productListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#a3a3a3"
+                    android:cacheColorHint="#000000"
+                    android:dividerHeight="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

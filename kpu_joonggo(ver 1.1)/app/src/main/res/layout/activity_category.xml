@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background2"
+
+    tools:context="com.example.sugang.Joonggo.Activity.CategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applogo_market"
+            android:layout_marginBottom="20dp"
+
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            >
+
+                <Button
+                android:id="@+id/TextBookButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="교재"
+                    android:layout_margin="3dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/GeneralBookButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="일반도서"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/RentedRoomButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="자취방"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="3dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <Button
+                android:id="@+id/ElectronicsButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="전자제품"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="3dp"/>
+
+
+            <Button
+                android:id="@+id/ClothesButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="의류"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/OthersButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="기타"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="3dp"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
