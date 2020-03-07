@@ -1,7 +1,9 @@
 # KPU_joonggo
 
 기간 : 2018년 7월 ~ 9월
+
 개발 기술 : JAVA + PHP + MySQL
+
 사용 라이브러리 : Glide, Volley
 
 Android Studio를 활용한 중고거래 애플리케이션입니다.
